@@ -41,4 +41,67 @@ p {
     margin-left: 10px;
     margin-right: 30px;
 }
+body { background-color: #F9F2E3; }
+h2 {
+    color: rgba(98,0,0,1);
+    padding: 10px;
+}
+UL {
+    padding-left: 0; /* Убираем отступ слева */
+    list-style-type: none; /* Прячем маркеры списка */
+}
+LI:before {
+    content: "\21aa "; /* Добавляем перед элементом списка символ в юникоде */
+}
+P.new:after {
+    content: " ВАЖНО ДЛЯ ВСЕХ "; /* Добавляем после текста абзаца */
+}
+#help {
+    position: absolute; /* Абсолютное позиционирование */
+    right: 300px; /* Положение элемента от правого края */
+    top: 600px; /* Положение от верхнего края */
+    width: 225px; /* Ширина блока */
+    padding: 10px; /* Поля вокруг текста */
+    background: #FFE4C4; /* Цвет фона */
+}
 
+               .em, .ex, .px, .percent {
+                   font-family: Verdana, Arial, sans-serif;
+               }
+.em { font-size: 2em; }
+.ex { font-size: 2ex; }
+.px { font-size: 30px; }
+.percent { font-size: 200%; }
+.alert {
+    color: rgb(152,0,255);
+}
+
+body {
+    font-family: Arial, sans-serif; /* Рубленый шрифт */
+}
+. letter {
+    color: #ff0000; /* Красный цвет символов */
+    font-size: 200%; /* Размер шрифта в процентах */
+    font-family: serif; /* Шрифт с засечками */
+    position: relative; /* Относительное позиционирование */
+    top: 500px; /* Сдвиг сверху */
+}
+.rightpic {
+    float: right; /* Выравнивание по правому краю */
+    margin: 0 0 5px 5px; /* Отступы вокруг фотографии */
+}
+figure {
+    background: #d9dabb; /* Цвет фона */
+    display: block; /* Блочный элемент */
+    width: 150px; /* Ширина */
+    height: 190px; /* Высота */
+    float: left; /* Блоки выстраиваются по горизонтали */
+    margin: 0 10px 10px 0; /* Отступы */
+    text-align: center; /* Выравнивание по центру */
+}
+figure img {
+    border: 2px solid #8b8e4b; /* Параметры рамки */
+}
+figure p {
+    margin-bottom: 0; /* Отступ снизу */
+}
