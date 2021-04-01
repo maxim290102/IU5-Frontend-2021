@@ -12,8 +12,13 @@
  * console.log(curry(add)(1)(2, 3)); //6
  * console.log(curry(add)(1, 2, 3)); //6
  */
-function curry(f) {
-    //code here
+function curry(f) { // curry(f) выполняет каррирование
+    return function func(...args) {
+        if (args.length >= f.length) {
+            return f(...args);
+        }
+        return curry(f.bind(null, ...args));
+    }
 }
 
 module.exports = curry;
