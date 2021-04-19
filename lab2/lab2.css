@@ -1,0 +1,40 @@
+body { background-color: #181818; }
+.flexMainWrapper{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.flexWrapper1{
+    display:flex;
+    margin-top: 30px;
+    justify-content: space-around;
+    align-items: baseline;
+    margin: 35px 0px;
+}
+.flexWrapperHref{
+    display: flex;
+    justify-content: space-between;
+    width: 393px;
+    height: 44px;
+
+}
+.links{
+    font-family: Graphik;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 10px;
+    text-decoration: none;
+    letter-spacing: 0.2px;
+    margin: 0px 10px;
+}
+.icon_figma{
+    width: 186px;
+    height: 58px;
+    margin: 0px 15px;
+}

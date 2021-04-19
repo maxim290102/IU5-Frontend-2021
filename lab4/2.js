@@ -7,7 +7,11 @@
  * "тот" -> true
  */
 function isPalindrome(str) {
-    //code here
+    let newStr=str.split('').reverse().join('');
+    if (newStr===str)
+        return true;
+    else return false;
+
 }
 
 module.exports = isPalindrome;
