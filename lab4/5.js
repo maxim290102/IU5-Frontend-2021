@@ -10,8 +10,35 @@
  */
 
 function checkBrackets(str) {
-    //code here
 
+    let stack = [];
+    for (let i = 0; i < str.length; i++) {
+        if (str[i] === '[' || str[i] === '(' || str[i] === '<') {
+            stack.push(str[i]);
+        }
+        if (str[i] === ']') {
+            if (stack[stack.length - 1] !== '[') {
+                return false;
+            } else {
+                stack.pop();
+            }
+        }
+        if (str[i] === ')') {
+            if (stack[stack.length - 1] !== '(') {
+                return false;
+            } else {
+                stack.pop();
+            }
+        }
+        if (str[i] === '>') {
+            if (stack[stack.length - 1] !== '<') {
+                return false;
+            } else {
+                stack.pop();
+            }
+        }
+    }
+    return true;
 }
 
 module.exports = checkBrackets;
