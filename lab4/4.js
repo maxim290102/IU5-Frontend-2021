@@ -17,6 +17,7 @@
 */
 
 function get1DArray(arr) {
-    return arr.flat(Infinity)
+    return arr.reduce((result, item) =>
+        result.concat(Array.isArray(item) ? get1DArray(item) : item), []);
 }
 module.exports = get1DArray;
