@@ -32,13 +32,6 @@ body{
     color: white;
 }
 
-#task3 {
-    display: flex;
-    flex-direction: column;
-    width: 300px;
-    align-items: center;
-    height: auto;
-}
 
 #list_btn {
     color: black;
